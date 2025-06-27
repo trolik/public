@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice de traduction (révisé)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 2em;
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: auto;
+        }
+        .tooltip-container {
+            position: relative;
+            cursor: help;
+            border-bottom: 1px dotted #000;
+        }
+        .tooltip-container .tooltip-text {
+            visibility: hidden;
+            background-color: #f9f9f9;
+            color: #000;
+            text-align: left;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 8px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; 
+            left: 50%;
+            margin-left: -120px;
+            width: 240px;
+            box-shadow: 0px 0px 6px #aaa;
+        }
+        .tooltip-container:hover .tooltip-text {
+            visibility: visible;
+        }
+        .tooltip-container .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 6px;
+            border-style: solid;
+            border-color: #ccc transparent transparent transparent;
+        }
+    </style>
+</head>
+<body>
+    <h2>Mon journal de la journée (révisé)</h2>
+
+    <p><span class="tooltip-container">Ce matin, c’était un peu le chaos : d’abord, je n’ai pas trouvé mes chaussettes, puis j’ai renversé de l’eau par terre en essayant de faire du thé.<span class="tooltip-text">Сегодня с утра был лёгкий хаос: сначала не мог найти носки, потом пролил воду на пол, пока пытался сделать чай.</span></span></p>
+
+    <p><span class="tooltip-container">Finalement, je suis sorti de chez moi plus tard que je ne voulais.<span class="tooltip-text">В итоге вышел из дома позже, чем хотел.</span></span></p>
+
+    <p><span class="tooltip-container">Il fait une chaleur terrible dehors — une vraie épreuve.<span class="tooltip-text">На улице жара — просто испытание.</span></span></p>
+
+    <p><span class="tooltip-container">Mais j’ai vu une scène drôle : un chien a volé une brioche à un enfant et a couru à travers toute la place.<span class="tooltip-text">Но зато видел забавную сцену: какой-то пёс украл у ребёнка булочку и побежал через всю площадь.</span></span></p>
+
+    <p><span class="tooltip-container">Tout le monde riait.<span class="tooltip-text">Все смеялись.</span></span></p>
+
+    <p><span class="tooltip-container">Là, je suis dans un café avec mon ordi, soi-disant je travaille, mais en vrai je regarde les gens passer.<span class="tooltip-text">Сейчас сижу в кафе с ноутбуком, якобы работаю, но на самом деле смотрю, как мимо проходят люди.</span></span></p>
+
+    <p><span class="tooltip-container">Je vais peut-être aller au parc tout à l’heure — j’ai envie de calme.<span class="tooltip-text">Наверное, позже поеду в парк — хочется тишины.</span></span></p>
+
+    <p><span class="tooltip-container">Et ce soir, peut-être que je me ferai une pizza et une série.<span class="tooltip-text">А вечером, может быть, устрою себе пиццу и сериал.</span></span></p>
+
+    <p><span class="tooltip-container">On verra selon l’humeur.<span class="tooltip-text">Посмотрим по настроению.</span></span></p>
+
+</body>
+</html>
